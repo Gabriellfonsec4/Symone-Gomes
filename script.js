@@ -39,6 +39,11 @@ const photos = [
     alt: "Unhas francesinhas em branco e rosa",
     caption: "04 / FRANCESINHA MODERNA",
   },
+  {
+    src: "assets/resultado-5.jpg",
+    alt: "Unhas vermelhas brilhantes em formato amendoado",
+    caption: "05 / VERMELHO ELEGANTE",
+  },
 ];
 
 const lightbox = document.querySelector("#lightbox");
@@ -174,6 +179,7 @@ document.querySelectorAll(".look-option").forEach((button) =>
 
     clearTimeout(lookTransition);
     lookImage.classList.add("is-changing");
+
     lookTransition = setTimeout(() => {
       const look = looks[index];
       lookImage.src = look.src;
